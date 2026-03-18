@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Pruebas } from '@components/pruebas/pruebas';
 
 @Component({
   selector: 'app-defer-options',
-  imports: [],
+  imports: [Pruebas],
   templateUrl: './defer-options.html',
   styleUrl: './defer-options.css',
 })

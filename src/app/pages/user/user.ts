@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pruebas } from '../../components/pruebas/pruebas';
+import { Pruebas } from '@components/pruebas/pruebas';
 
 @Component({
   selector: 'app-user',

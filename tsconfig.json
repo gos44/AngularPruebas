@@ -3,6 +3,21 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@shared/*": ["./src/app/shared/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@pages/*": ["./src/app/pages/*"],
+      "@pages/user": ["./src/app/pages/user/user"],
+      "@pages/users": ["./src/app/pages/users/users"],
+      "@pages/control-flow": ["./src/app/pages/control-flow/control-flow"],
+      "@pages/change-detection": ["./src/app/pages/change-dectection/change-dectection"],
+      "@pages/defer-view": ["./src/app/pages/defer-view/defer-view"],
+      "@pages/defer-options": ["./src/app/pages/defer-options/defer-options"],
+      "@pages/view-transition": ["./src/app/pages/view-transition/view-transition"],
+      "@services/*": ["./src/app/services/*"],
+      "@components/pruebas": ["./src/app/components/pruebas/pruebas"],
+      "@interfaces/*": ["./src/app/interfaces/*"]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,

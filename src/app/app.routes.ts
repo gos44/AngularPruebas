@@ -42,8 +42,13 @@ export const routes: Routes = [
                 path:'view-transition',
                 title:'View Transition',
                 loadComponent:()=> import('./pages/view-transition/view-transition')
-            } 
-        ]      
+            },
+            // {
+            //     path:'',
+            //     redirectTo:'/control-flow',
+            //     pathMatch:'full'
+            // }
+        ]       
     },
     {
         path:'',

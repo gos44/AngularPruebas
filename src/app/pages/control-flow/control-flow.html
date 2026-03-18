@@ -1,1 +1,36 @@
-<p>control-flow works!</p>
+<input class="grin bg-blue-400 rounded p-2 m-2 border-none border-amber-50 " type="text">
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <div class="bg-gray-50 rounded shadow p-10">
+
+        <h2 class="text-2xl font-bold mb-5">if:{{showContent()}}</h2>
+        <button (click)="toogleContent()" class="p-2 bg-blue-500 text-white rounded hover:bg-purple-600 transition ease-linear duration-150">
+        Click me
+        </button>
+        @if (showContent()) {
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, sapiente magni? 
+                Consequuntur consequatur modi tenetur odit excepturi ad asperiores veritatis 
+                eum aut, autem culpa sint debitis, ratione aspernatur, nulla eaque?</p>
+        }@else {
+            <p>No mano no se mira</p>
+        }
+    </div>
+
+
+    <div class="bg-gray-50 rounded shadow p-10"> 
+        <h2 class="text-2xl text-pink-500 p-1">{{grade()}}</h2>
+        @switch(grade()){
+          @case ('A') {
+            <p>Numero 1</p>
+          }
+          @case ('B') {
+            <p>Numero 2</p>
+          }
+          @default () {
+            <p>Sin numeros</p>
+          }  
+        }
+    </div>
+</section>
+
+
