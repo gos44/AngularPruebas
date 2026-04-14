@@ -39,9 +39,14 @@ export const routes: Routes = [
             }
             ,
             {
-                path:'view-transition',
-                title:'View Transition',
-                loadComponent:()=> import('./pages/view-transition/view-transition')
+                path:'view-transition-1',
+                title:'View Transition1',
+                loadComponent:()=> import('./pages/view-transition/view-transition1')
+            },
+            {
+                path:'view-transition-2',
+                title:'View Transition2',
+                loadComponent:()=> import('./pages/view-transition/view-transition2')
             },
             // {
             //     path:'',

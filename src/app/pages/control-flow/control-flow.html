@@ -1,4 +1,4 @@
-<input class="grin bg-blue-400 rounded p-2 m-2 border-none border-amber-50 " type="text">
+<app-title title="Control flow" withShadow ></app-title>
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
     <div class="bg-gray-50 rounded shadow p-10">
@@ -16,7 +16,6 @@
         }
     </div>
 
-
     <div class="bg-gray-50 rounded shadow p-10"> 
         <h2 class="text-2xl text-pink-500 p-1">{{grade()}}</h2>
         @switch(grade()){
@@ -31,6 +30,34 @@
           }  
         }
     </div>
+
+     <div class="bg-gray-50 rounded shadow p-10"> 
+        <ul >
+        @for (framework of frameworks(); track $index; let i =$index
+        , first = $first ,even = $even ,odd = $odd,count = $count,last = $last )  {
+            <li [class]="{
+                'bg-red-700' :even && !first && !last,
+                'bg-blue-500' :odd && !first && !last,
+                'bg-yellow-500' :first,
+            }">{{i +1}}- {{framework}}</li>
+        }@empty {
+            <li class="text-2xl font-black">!No hay</li>
+        }
+        </ul>
+
+    </div>
+   
+  <div class="bg-gray-50 rounded shadow p-10"> 
+        <ul>
+        @for (framework of frameworks2(); track $index; let i =$index) {
+              <li>{{i +1}}- {{framework}}</li>
+        }@empty {
+            <li class="text-2xl font-black">!No hay</li>
+        }
+        </ul>
+
+    </div>
+
 </section>
 
 
